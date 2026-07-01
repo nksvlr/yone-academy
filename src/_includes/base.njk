@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} — Yone Academy</title>
+    <meta name="description" content="{{ description | default('O maior guia de Yone do Brasil') }}">
+    
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>⚔️</text></svg>">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header__container">
+            <a href="/" class="header__logo">
+                <span class="header__logo-icon">⚔️</span>
+                <span class="header__logo-text">Yone<b>Academy</b></span>
+            </a>
+
+            <nav class="header__nav" id="headerNav">
+                <ul class="header__nav-list">
+                    <li><a href="/" class="header__nav-link">Início</a></li>
+                    <li><a href="/pages/introducao/" class="header__nav-link">Introdução</a></li>
+                    <li><a href="/pages/mecanicas/" class="header__nav-link">Mecânicas</a></li>
+                    <li><a href="/pages/combos/" class="header__nav-link">Combos</a></li>
+                    <li><a href="/pages/wave-management/" class="header__nav-link">Wave</a></li>
+                    <li><a href="/pages/matchups-mid/" class="header__nav-link">Matchups</a></li>
+                    <li><a href="/pages/builds/" class="header__nav-link">Builds</a></li>
+                </ul>
+            </nav>
+
+            <button class="header__menu-btn" id="menuBtn" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO DA PÁGINA (aqui entra o conteúdo de cada .md) -->
+    <main>
+        {{ content | safe }}
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__brand">
+                <h3>⚔️ Yone Academy</h3>
+                <p>O maior guia de Yone do Brasil.</p>
+            </div>
+            <div class="footer__links">
+                <div class="footer__col">
+                    <h4>Navegação</h4>
+                    <a href="/">Início</a>
+                    <a href="/pages/introducao/">Introdução</a>
+                    <a href="/pages/mecanicas/">Mecânicas</a>
+                    <a href="/pages/combos/">Combos</a>
+                </div>
+                <div class="footer__col">
+                    <h4>Conteúdo</h4>
+                    <a href="/pages/matchups-mid/">Matchups</a>
+                    <a href="/pages/wave-management/">Wave</a>
+                    <a href="/pages/builds/">Builds</a>
+                    <a href="/pages/macro-game/">Macro</a>
+                </div>
+                <div class="footer__col">
+                    <h4>Projeto</h4>
+                    <a href="/pages/faq/">FAQ</a>
+                    <a href="/pages/glossario/">Glossário</a>
+                    <a href="/pages/apoie/">Apoie</a>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>© 2025 Yone Academy — Projeto independente, sem fins lucrativos.</p>
+                <p>Yone e League of Legends são marcas da Riot Games, Inc.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+
+</body>
+</html>

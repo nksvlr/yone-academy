@@ -1,0 +1,12 @@
+{
+  "name": "yone-academy",
+  "version": "1.0.0",
+  "description": "O maior guia de Yone do Brasil",
+  "scripts": {
+    "dev": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}

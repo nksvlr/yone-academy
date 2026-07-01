@@ -1,0 +1,12 @@
+# Dependências instaladas pelo npm
+node_modules/
+
+# Site pronto gerado pelo Eleventy (é criado automaticamente)
+_site/
+
+# Arquivos de sistema (cachê do Windows/Mac)
+.DS_Store
+Thumbs.db
+
+# ⚠️ NUNCA suba seu token pro GitHub!
+token-github.txt
