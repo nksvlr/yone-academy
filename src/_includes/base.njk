@@ -5,29 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }} — Yone Academy</title>
     <meta name="description" content="{{ description | default('O maior guia de Yone do Brasil') }}">
-    
+
+    <!-- Google Fonts: Cinzel (títulos) + Inter (texto) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>⚔️</text></svg>">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>️</text></svg>">
 </head>
 <body>
 
     <!-- HEADER -->
     <header class="header" id="header">
         <div class="header__container">
-            <a href="/" class="header__logo">
+            <a href="{{ '/' | url }}" class="header__logo">
                 <span class="header__logo-icon">⚔️</span>
                 <span class="header__logo-text">Yone<b>Academy</b></span>
             </a>
 
             <nav class="header__nav" id="headerNav">
                 <ul class="header__nav-list">
-                    <li><a href="/" class="header__nav-link">Início</a></li>
-                    <li><a href="/pages/introducao/" class="header__nav-link">Introdução</a></li>
-                    <li><a href="/pages/mecanicas/" class="header__nav-link">Mecânicas</a></li>
-                    <li><a href="/pages/combos/" class="header__nav-link">Combos</a></li>
-                    <li><a href="/pages/wave-management/" class="header__nav-link">Wave</a></li>
-                    <li><a href="/pages/matchups-mid/" class="header__nav-link">Matchups</a></li>
-                    <li><a href="/pages/builds/" class="header__nav-link">Builds</a></li>
+                    <li><a href="{{ '/' | url }}" class="header__nav-link">Início</a></li>
+                    <li><a href="#" class="header__nav-link">Introdução</a></li>
+                    <li><a href="#" class="header__nav-link">Mecânicas</a></li>
+                    <li><a href="#" class="header__nav-link">Combos</a></li>
+                    <li><a href="#" class="header__nav-link">Wave</a></li>
+                    <li><a href="#" class="header__nav-link">Matchups</a></li>
+                    <li><a href="#" class="header__nav-link">Builds</a></li>
                 </ul>
             </nav>
 
@@ -39,7 +44,6 @@
         </div>
     </header>
 
-    <!-- CONTEÚDO DA PÁGINA (aqui entra o conteúdo de cada .md) -->
     <main>
         {{ content | safe }}
     </main>
@@ -53,28 +57,28 @@
             </div>
             <div class="footer__links">
                 <div class="footer__col">
-                    <h4>Navegação</h4>
-                    <a href="/">Início</a>
-                    <a href="/pages/introducao/">Introdução</a>
-                    <a href="/pages/mecanicas/">Mecânicas</a>
-                    <a href="/pages/combos/">Combos</a>
+                    <h4>NAVEGAÇÃO</h4>
+                    <a href="{{ '/' | url }}">Início</a>
+                    <a href="#">Introdução</a>
+                    <a href="#">Mecânicas</a>
+                    <a href="#">Combos</a>
                 </div>
                 <div class="footer__col">
-                    <h4>Conteúdo</h4>
-                    <a href="/pages/matchups-mid/">Matchups</a>
-                    <a href="/pages/wave-management/">Wave</a>
-                    <a href="/pages/builds/">Builds</a>
-                    <a href="/pages/macro-game/">Macro</a>
+                    <h4>CONTEÚDO</h4>
+                    <a href="#">Matchups</a>
+                    <a href="#">Wave</a>
+                    <a href="#">Builds</a>
+                    <a href="#">Macro</a>
                 </div>
                 <div class="footer__col">
-                    <h4>Projeto</h4>
-                    <a href="/pages/faq/">FAQ</a>
-                    <a href="/pages/glossario/">Glossário</a>
-                    <a href="/pages/apoie/">Apoie</a>
+                    <h4>PROJETO</h4>
+                    <a href="#">FAQ</a>
+                    <a href="#">Glossário</a>
+                    <a href="#">Apoie</a>
                 </div>
             </div>
             <div class="footer__bottom">
-                <p>© 2025 Yone Academy — Projeto independente, sem fins lucrativos.</p>
+                <p>© {{ "" | year }} Yone Academy — Projeto independente, sem fins lucrativos.</p>
                 <p>Yone e League of Legends são marcas da Riot Games, Inc.</p>
             </div>
         </div>
